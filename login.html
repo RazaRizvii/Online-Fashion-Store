@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Fashion Store</title>
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+
+<body>
+    <logo class="logo">
+        <center>
+            <img src="images\logo.png" alt="Check URL" width="100px" height="100px">
+            <big>
+                Mens Fashion Store
+            </big>
+        </center>
+    </logo>
+
+    <nav class="menu-bar">
+        <hr>
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="itemCatalog.html">
+                    Item Catalog
+                </a>
+            </li>
+            <li>
+                <a href="viewCart.html">
+                    View Cart
+                </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="signup.html">
+                    Sign Up
+                </a>
+            </li>
+            <li>
+                <a href="logout.html">
+                    Logout
+                </a>
+            </li>
+            <li>
+                <a href="aboutUs.html">
+                    About Us
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </nav>
+
+    <form class="form"><br> Enter User Name: <input type="text" id="userName" /><br>
+        <br> Enter Password: <input type="text" id="password" /><br><br>
+        <input type="submit" value="Login" onclick="formdata()" /><br>
+    </form>
+
+    <!-- document.writeln("<h1>Confirmation Page</h1><br>");
+            document.writeln("Thank you for joining Mens Fashion.<br><br>");
+            document.writeln("User Name: " + firstname + "<br>");
+            document.writeln("Password: " + lastname); -->
+    <script>
+        function formdata() {
+            var userName = document.getElementById("userName").value;
+            var password = document.getElementById("password").value;
+            console.log(userName)
+            console.log(password)
+        }
+    </script>
+</body>
+
+</html>

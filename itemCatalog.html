@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Fashion store</title>
+    <link rel="stylesheet" href="styleSheet.css">
+</head>
+
+<body id="[blazerId].exercise3.html">
+    <logo class="logo">
+        <center>
+            <img src="images\logo.png" alt="Check URL" width="100px" height="100px">
+            <big>
+                Mens Fashion Store
+            </big>
+        </center>
+    </logo>
+
+    <nav class="menu-bar">
+        <hr>
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="itemCatalog.html">
+                    Item Catalog
+                </a>
+            </li>
+            <li>
+                <a href="viewCart.html">
+                    View Cart
+                </a>
+            </li>
+            <li>
+                <a href="aboutUs.html">
+                    About Us
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </nav>
+
+    <main>
+        <center>
+            <h1>
+                Items in stock: <br>
+            </h1>
+            <h2>
+                Men Clothing: <br>
+            </h2>
+        </center>
+        <categories1 class="cat">
+            <jacket class="items">
+                <img src="images\jacket.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Jacket<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 250$<br> Denim Jacket from <i>Levis</i> available with very fine quality.<br>
+                    <div class="wrapper">
+                        <span class="minusJ">
+                            -
+                        </span>
+                        <span class="numJ">
+                            0
+                        </span>
+                        <span class="plusJ">
+                            +
+                        </span>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusJ = document.querySelector(".plusJ"),
+                            minusJ = document.querySelector(".minusJ"),
+                            numJ = document.querySelector(".numJ");
+                        let J = 0;
+
+                        plusJ.addEventListener("click", () => {
+                            J++;
+                            numJ.innerText = J;
+                        });
+
+                        minusJ.addEventListener("click", () => {
+                            J--;
+                            J = (J < 0) ? "0" : J;
+                            numJ.innerText = J;
+                        });
+                    </script>
+                </center>
+            </jacket>
+            <hoodie class="items">
+                <img src="images\hoodie.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Hoodie<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 100$<br> Hoodie from <i>Tommy Hilfiger</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusH">
+                            -
+                        </span>
+                        <span class="numH">
+                            0
+                        </span>
+                        <span class="plusH">
+                            +
+                        </span>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusH = document.querySelector(".plusH"),
+                            minusH = document.querySelector(".minusH"),
+                            numH = document.querySelector(".numH");
+                        let H = 1;
+
+                        plusH.addEventListener("click", () => {
+                            H++;
+                            numH.innerText = H;
+                        });
+
+                        minusH.addEventListener("click", () => {
+                            H--;
+                            H = (H < 0) ? "0" : H;
+                            numH.innerText = H;
+                        });
+                    </script>
+                </center>
+            </hoodie>
+            <shirt class="items">
+                <img src="images\shirt.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Shirt<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 150$<br> Shirt from <i>Cougar</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusS">
+                            -
+                        </span>
+                        <span class="numS">
+                            0
+                        </span>
+                        <span class="plusS">
+                            +
+                        </span>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusS = document.querySelector(".plusS"),
+                            minusS = document.querySelector(".minusS"),
+                            numS = document.querySelector(".numS");
+                        let S = 1;
+
+                        plusS.addEventListener("click", () => {
+                            S++;
+                            numS.innerText = S;
+                        });
+
+                        minusS.addEventListener("click", () => {
+                            S--;
+                            S = (S < 0) ? "0" : S;
+                            numS.innerText = S;
+                        });
+                    </script>
+                </center>
+            </shirt>
+            <jeans class="items">
+                <img src="images\jeans.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Jeans<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 130$<br> Jeans from <i>Levis</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusJJ">
+                            -
+                        </span>
+                        <span class="numJJ">
+                            0
+                        </span>
+                        <span class="plusJJ">
+                            +
+                        </span>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusJJ = document.querySelector(".plusJJ"),
+                            minusJJ = document.querySelector(".minusJJ"),
+                            numJJ = document.querySelector(".numJJ");
+                        let JJ = 1;
+
+                        plusJJ.addEventListener("click", () => {
+                            JJ++;
+                            numJJ.innerText = JJ;
+                        });
+
+                        minusJJ.addEventListener("click", () => {
+                            JJ--;
+                            JJ = (JJ < 0) ? "0" : JJ;
+                            numJJ.innerText = JJ;
+                        });
+                    </script>
+                </center>
+            </jeans>
+        </categories1>
+        <br>
+
+        <center>
+            <h2>
+                Men Accessories: <br>
+            </h2>
+        </center>
+        <categories2 class="cat">
+            <watch class="items">
+                <img src="images\watch.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Wrist Watch<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 500$<br> Wrist Watch from <i>Tissot</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusW">
+                            -
+                        </span>
+                        <span class="numW">
+                            0
+                        </span>
+                        <span class="plusW">
+                            +
+                        </span>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusW = document.querySelector(".plusW"),
+                            minusW = document.querySelector(".minusW"),
+                            numW = document.querySelector(".numW");
+                        let W = 1;
+
+                        plusW.addEventListener("click", () => {
+                            W++;
+                            numW.innerText = W;
+                        });
+
+                        minusW.addEventListener("click", () => {
+                            minusW.addEventListener("click", () => {
+                                if (W > 0) {
+                                    W--;
+                                    numW.innerText = W;
+                                }
+                            });
+                        });
+                    </script>
+                </center>
+            </watch>
+            <bracelet class="items">
+                <img src="images\bracelet.jpg" alt="Check URL" width="300px" height="300px">
+                <h3>
+                    <u>
+                        <b>
+                            <center>
+                                Bracelet<br>
+                            </center>
+                        </b>
+                    </u>
+                </h3>
+                <center>
+                    Price = 60$<br> Bracelets from <i>Seek Discomfort</i> available with very fine quality.
+                    <div class="wrapper">
+                        <span class="minusB">
+                            -
+                        </span>
+                        <span class="numB">
+                            0
+                        </span>
+                        <span class="plusB">
+                            +
+                        </span>
+                    </div>
+
+                    <!-- a = (a < 0) ? "0" + a : a -->
+                    <script>
+                        const plusB = document.querySelector(".plusB"),
+                            minusB = document.querySelector(".minusB"),
+                            numB = document.querySelector(".numB");
+                        let B = 1;
+
+                        plusB.addEventListener("click", () => {
+                            B++;
+                            numB.innerText = B;
+                        });
+
+                        minusB.addEventListener("click", () => {
+                            if (B > 0) {
+                                B--;
+                                numB.innerText = B;
+                            }
+                        });
+                    </script>
+                </center>
+            </bracelet>
+        </categories2>
+    </main>
+</body>
+
+</html>
