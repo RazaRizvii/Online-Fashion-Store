@@ -11,3 +11,4 @@ This website has 7 pages which includes:
   7. About Us
   
 Main page for this website is index.html. This website uses concept of html, java script and css.
+This website is not connected to any database it just include frontent!!!
